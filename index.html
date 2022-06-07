@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>클론코딩(VIBESTUDIOS)</title>
+  <link rel="stylesheet" href="./css/initial.min.css">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/swiper-customize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="./js/common.js"></script>
+</head>
+
+<body>
+  <!-- 햄버거 누르면 나오는 메뉴 영역 -->
+  <div class="overlay-menu">
+    <div class="outer">
+      <div class="inner">
+        <ul class="flexnav">
+          <li>
+            <span data-hover="About"><a href="http://naver.com">About</a></span>
+          </li>
+          <li>
+            <span data-hover="Works">Works</span>
+          </li>
+          <li>
+            <span data-hover="News">News</span>
+          </li>
+          <li>
+            <span data-hover="Careers">Careers</span>
+          </li>
+          <li>
+            <span data-hover="Careers">IR</span>
+          </li>
+          <li>
+            <span data-hover="Contact">Contact</span>
+          </li>
+          <!-- <li class="menu-timeline buy-item"><a target="_blank" class="link " href="https://www.youtube.com/channel/UC6IO0TgiIfPWjc8nmzm0ofA">
+              <div class="before-span" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"><span data-hover="Buy Now">
+                  <img src="images/icon-youtube.svg" alt=""></span></div></a>
+            <a target="_blank" class="link " href="https://www.facebook.com/vivestudiosm/">
+              <div class="before-span" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"><span data-hover="Buy Now">
+                  <img src="images/icon-fb.svg" alt=""></span></div></a>
+            <a target="_blank" class="link " href="https://www.instagram.com/vivestudios/">
+              <div class="before-span" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"><span data-hover="Buy Now">
+                  <img src="images/icon-insta.svg" alt=""></span></div></a>
+            <a target="_blank" class="link " href="https://vimeo.com/vivestudios">
+              <div class="before-span" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"><span data-hover="Buy Now">
+                  <img src="images/icon-vimeo.svg" alt=""></span></div></a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 헤더 영역 -->
+  <header class="fullscreen-menu small-height">
+    <!-- Logo -->
+    <div id="header-container" class="header-inner" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+      <div id="logo" class="hide-ball disable-drag"><a class="ajax-link" data-type="page-transition" href="./index.html">
+          <!-- <img class="black-logo" src="http://www.vivestudios.com/v2/web/images/logo.png" alt="VIVE Logo"> -->
+          <img class="white-logo" src="http://www.vivestudios.com/v2/web/images/logo-white.png" alt="VIVE Logo">
+        </a></div>
+
+      <!-- Menu Burger -->
+      <div class="button-wrap right menu disable-drag">
+        <div class="icon-wrap">
+          <div id="burger-wrapper">
+            <div class='toggle'>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- mainbanner -->
+  <div id="main-banner" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide inner first"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/KoAY8agPJDI?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="swiper-slide inner second"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ddj98l5XkFI?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="swiper-slide inner third"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/3GHnZtTuNUo?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="swiper-slide inner fourth"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/JtKhMqIrH9E?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="swiper-slide inner fifth"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/fIf2epKjzsc?autoplay=1&mute=1&loop=1&controls=0" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <!-- 첫번째 섹션 -->
+  <div class="section-wrapper" style="background-color: rgb(32, 32, 32);">
+    <div class="inner">
+      <div class="section-container">
+        <strong class="intro" data-delay="200" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Company Intro</strong>
+        <h1 class="beyond">Beyond what's possible.We are a global storyteller that challenges the limits of imagination and technology, delivering engaging digital experiences for global brands.</h1>
+        <p class="beyond-introduce" data-delay="400">비브스튜디오스는 상상과 기술의 한계를 뛰어넘는 혁신적인 콘텐트를 만드는 글로벌 스토리텔러입니다. 비브스튜디오스만의 기술력과 스토리텔링으로 지금껏 경험해보지 못한 새로운 디지털 경험을 선사합니다.</p>
+      </div>
+      <div class="button-box">
+        <a href="about.html" class="common-btn">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <!-- 두번째 섹션 -->
+  <div class="section-wrapper2">
+    <div class="inner2">
+      <div class="section-container2">
+        <div class="text-left">
+          <strong class="meta-studio" data-delay="100" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Meta Studio</strong>
+        </div>
+        <div class="text-right">
+          <h1 class="meta">We offer end-to-end production. Our real-time workflow enables you to more creative freedom from virtual pre-viz and scene creation to LED stage capture.</h1>
+          <p class="meta-introduce" data-delay="300">기획부터 제작, 소프트웨어 개발까지 원스톱으로 가능한 파이프라인을 갖고 있습니다. 비브스튜디오스만의 실시간 통합제어시스템으로 더욱 자유롭게 버추얼 프로덕션 콘텐트를 제작할 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="second-section" class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide inner first"><img src="http://www.vivestudios.com/v2/web/images/projects/TBNW_cover_2.jpg"></div>
+      <div class="swiper-slide inner second"><img src="http://www.vivestudios.com/v2/web/images/projects/VIVE-STUDIOS-Website_BM_Cover_02.jpg"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <!-- <div id="second-section" class="swiper mySwiper2">
+    <div class="slide-wrapper">
+      <div class="swiper-slide inner first"><img src="http://www.vivestudios.com/v2/web/images/projects/VIVESTUDIOSTXT_MV_sunset_NB.jpg" alt="sc1"></div>
+      <div class="swiper-slide inner second"><img src="http://www.vivestudios.com/v2/web/images/projects/VIVE-STUDIOS-Website_BM_Cover_02.jpg" alt="sc2"></div>
+      <div class="swiper-slide inner third"><img src="http://www.vivestudios.com/v2/web/images/projects/TBNW_cover_2.jpg" alt="sc3"></div>
+    </div>
+    <div class="swiper-button-next">
+      <i class="icon-arrows_right"></i>
+    </div>
+    <div class="swiper-button-prev">
+      <i class="icon-arrows_left"></i>
+    </div>
+  </div> -->
+
+  <!-- 세번째 섹션 -->
+  <div class="section-wrapper3">
+    <div class="inner3">
+      <div class="section-container3">
+        <div class="text-left">
+          <strong class="ide" data-delay="100" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Immersive Digital Experience</strong>
+        </div>
+        <div class="text-right">
+          <h1 class="ide-introduce">The world of unlimited possibility. We unite the digital and physical worlds to create rich, immersive experiences for global brands.</h1>
+          <p class="ide-introduce-ko" data-delay="300">무한한 가능성의 세상에서 비브스튜디오스는 현실과 가상 세계의 경계를 허물고 몰입감 넘 치는 디지털 경험을 제공합니다.</p>
+        </div>
+      </div>
+    </div>
+    <div id="third-section" class="swiper mySwiper3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide inner first"><img src="./img/s3_tirano.jpg"></div>
+        <div class="swiper-slide inner second"><img src="./img/s3_girl.jpg"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <!-- 네번째 섹션 -->
+  <div class="section-wrapper4">
+    <div class="inner4">
+      <div class="section-container4">
+        <div class="text-left">
+          <strong class="v&c" data-delay="100" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">Visual & Creative</strong>
+        </div>
+        <div class="text-right">
+          <h1 class="v&c-introduce">One-stop-shop for every content. We are a creative studio with a proud commitment to quality and artistry — spanning the realms of animation, commercials, game cinematics, CGI, and more.</h1>
+          <p class="v&c-introduce-ko" data-delay="300">비브스튜디오스는 애니메이션, 광고, 게임, 드라마, 영화, CGI 등 다양한 분야의 콘텐트를 제작하고 있습니다. 기술적 퀄리티와 예술성을 동시에 추구하는 크리에이티브 스튜디오입니다.</p>
+        </div>
+      </div>
+    </div>
+    <div id="fourth-section" class="swiper mySwiper4">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide inner first"><img src="./img/s4_dinor.jpg"></div>
+        <div class="swiper-slide inner second"><img src="./img/s4_run.jpg"></div>
+        <div class="swiper-slide inner third"><img src="./img/s4_soldier.jpg"></div>
+        <div class="swiper-slide inner fourth"><img src="./img/s4_yellow.jpg"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <!-- 다섯번째 섹션 -->
+  <div class="section-wrapper5">
+    <div class="inner5">
+      <div class="section-container5">
+        <div class="text-left">
+          <strong class="vit" data-delay="100" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">VIT</strong>
+        </div>
+        <div class="text-right">
+          <h1 class="vit-introduce">Streamline workflow so that you can do more. Virtual Immersive Technology is powerful and simple system. It is a cutting-edge integrated platform developed in-house for custom camera tracking and lighting
+            tool.</h1>
+          <p class="vit-introduce-ko" data-delay="300">VIT(ViveStudios Immersive Technology)는 단순하고 강력합니다. VIT는 비브스튜디오스가 자체 개발한 통합 제어 솔루션으로 버추얼 프로덕션에서 가장 중요한 기술들을 하나의 플랫폼에서 통합 제어할 수 있게 해주는 핵심 기술입니다. 더 빠르고 효과적으로 다양한 콘텐트를 실시간 촬영할 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+    <div id="fifth-section" class="swiper mySwiper5">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide inner first"><img src="./img/vit.jpg"></div>
+        <!-- <div class="swiper-slide inner second"><img src="./img/vit.jpg"></div> -->
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <!-- 여섯번째 섹션 -->
+  <div class="section-wrapper6">
+    <div class="inner6">
+      <div class="section-container6">
+        <h1><span class="vmw-hover">View more work</span></h1>
+      </div>
+      <div class="items-inner">
+        <div class="section6-content">
+          <div class="items">
+            <div class="bg-box"></div>
+            <h3>광화전차</h3>
+            <p>Immersive Digital Experience</p>
+          </div>
+          <div class="items">
+            <div class="bg-box"></div>
+            <h3>The Pirates</h3>
+            <p>Meta Studio</p>
+          </div>
+          <div class="items">
+            <div class="bg-box"></div>
+            <h3>PUBG : Born Survivor</h3>
+            <p>Visual & Creative</p>
+          </div>
+          <div class="items">
+            <div class="bg-box"></div>
+            <h3>Kiss the Universe</h3>
+            <p>Immersive Digital Experience</p>
+          </div>
+          <div class="items">
+            <div class="bg-box"></div>
+            <h3>[메이플스토리M] 신규 캐릭터『아크』</h3>
+            <p>Visual & Creative</p>
+          </div>
+          <div class="items">
+            <div class="bg-box"></div>
+            <h3>Elyon</h3>
+            <p>Visual & Creative</p>
+          </div>
+          <div class="items">
+            <div class="bg-box"></div>
+            <h3>LO$ER=LO♡ER</h3>
+            <p>Meta Studio</p>
+          </div>
+          <div class="items">
+            <div class="bg-box"></div>
+            <h3>Showreel</h3>
+            <p>Meta Studio</p>
+          </div>
+          <div class="items">
+            <div class="bg-box"></div>
+            <h3>MABINOGI : 영혼의 무사 '단아'</h3>
+            <p>Meta Studio</p>
+          </div>
+          <div class="items">
+            <div class="bg-box"></div>
+            <h3>Broken Me</h3>
+            <p>Meta Studio</p>
+          </div>
+          <div class="items">
+            <div class="bg-box"></div>
+            <h3>P4G 서울 정상회의</h3>
+            <p>Immersive Digital Experience</p>
+          </div>
+          <div class="items">
+            <div class="bg-box"></div>
+            <h3>The Brave New World</h3>
+            <p>Meta Studio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 일곱번째 섹션 -->
+  <div class="section-wrapper7">
+    <div class="section-container7">
+      <h1><span class="brands-hover">Trusted by global brands</span></h1>
+      <div class="table-wrap">
+        <ul class="brands">
+          <li data-delay="150" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <img src="./img/brands/sk.png" alt="client">
+          </li>
+          <li data-delay="150" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <img src="./img/brands/samsung.png" alt="client">
+          </li>
+          <li data-delay="150" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <img src="./img/brands/hybe.png" alt="client">
+          </li>
+          <li data-delay="150" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <img src="./img/brands/bighit.png" alt="client">
+          </li>
+          <li data-delay="150" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <img src="./img/brands/lg.png" alt="client">
+          </li>
+          <li data-delay="150" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <img src="./img/brands/pubg.png" alt="client">
+          </li>
+          <li data-delay="150" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <img src="./img/brands/hyundai.png" alt="client">
+          </li>
+          <li data-delay="150" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <img src="./img/brands/nexon.png" alt="client">
+          </li>
+          <li data-delay="150" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <img src="./img/brands/kbs.png" alt="client">
+          </li>
+          <li data-delay="150" style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <img src="./img/brands/kia.png" alt="client">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer 상단 영역 -->
+  <div class="dark-section-wrapper">
+    <div class="dark-section-container">
+      <div id="main-page-contact" class="vc_row row_padding_bottom row_padding_top dark-section">
+        <div class="footer-left"><strong class="footer-cu">Contact Us</strong>
+          <h1 class="footer-contact-text">Ready to<br>work together?</h1>
+          <div class="button-box has-animation animated">
+            <div class="bigbtn">
+              <!-- <div class="clapat-button parallax-element"><a data-type="page-transition" href="contact"> -->
+              <div class="gitbtn">
+                <a href="contact_us.html">Get in touch</a></div>
+              <!-- </a></div> -->
+            </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <img class="white-logo" src="http://www.vivestudios.com/v2/web/images/logo-white.png" alt="VIVE Logo">
+          <p class="address">06026. 서울특별시 강남구 압구정동 도산대로 235 4층<br>4th Floor, 235, Dosan-daero, Gangnam-gu, Seoul, Republic of Korea</p>
+          <p class="tel"><span>Tel</span> +82-2-574-7076 </p>
+          <p class="fax"><span>Fax</span> +82-2-508-8352 </p>
+          <p class="email"><span>E-mail</span> info@vivestudios.com </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer 하단 영역 -->
+  <footer class="footer-copyright">
+    <div id="backtotop" class="button-wrap left">
+      <i class="go-up"></i>
+    </div>
+    <div id="footer-container">
+      <div class="footer-middle">
+        <div class="copyright">© 2003 - 2022. <a class="link" href="http://vivestudios.com/">VIVE STUDIOS</a>. All rights reserved.</div>
+      </div>
+      <div class="socials-wrap">
+        <!-- <div class="socials-icon"><i class="fa fa-share-alt" aria-hidden="true"></i></div> -->
+        <!-- <div class="socials-text">Follow Us</div> -->
+        <ul class="socials">
+            <li><span><a href="https://www.facebook.com/vivestudiosm/?ref=stream" target="_blank"><i class="fa fa-facebook"></i></a></span></li>
+            <li><span><a href="https://www.instagram.com/vivestudios/" target="_blank"><i class="fa fa-instagram"></i></a></span></li>
+            <li><span><a href="https://www.youtube.com/user/VIVECHANNEL" target="_blank"><i class="fa fa-youtube-play"></i></a></span></li>
+            <li><span><a href="https://www.linkedin.com/company/vivestudios/" target="_blank"><i class="fa fa-linkedin"></i></a></span></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <!-- gototop 스크립트 -->
+  <script>
+    $(document).ready(function() {
+      $('.go-up').click(function() {
+        var goTop = $('.go-up').offset();
+        $('html,body').animate({
+          scrollTop: 0
+        }, 1500);
+      });
+    });
+  </script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    document.querySelector('.toggle').onclick = function() {
+      document.body.classList.toggle('overlay');
+    }
+
+    $('.toggle').click(function() {
+      $(this).toggleClass('active');
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var swiperSecond = new Swiper(".mySwiper2", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var swiperThird = new Swiper(".mySwiper3", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var swiperFourth = new Swiper(".mySwiper4", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
